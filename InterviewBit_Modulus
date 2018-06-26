@@ -1,0 +1,16 @@
+public class Solution {
+    public int pow(int x, int n, int d) {
+        
+        
+      int y=((int)Math.pow(x,n));
+      if(y<0)
+      {
+          y=y+d;
+      }
+      else
+      {
+          y=y%d;
+      }
+      return y;
+    }
+}
